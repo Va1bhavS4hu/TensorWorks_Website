@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Editing Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas class="tensor-canvas" aria-hidden="true"></canvas>
+
+    <aside class="tuning-panel" aria-label="Tensor tuning controls">
+      <div class="tuning-group">
+        <label for="color-threshold">Color Threshold</label>
+        <input
+          id="color-threshold"
+          class="tuning-slider"
+          type="range"
+          min="0"
+          max="100"
+          value="20"
+        />
+      </div>
+      <div class="tuning-group">
+        <label for="rattle-threshold">Rattle Threshold</label>
+        <input
+          id="rattle-threshold"
+          class="tuning-slider"
+          type="range"
+          min="0"
+          max="100"
+          value="12"
+        />
+      </div>
+    </aside>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="brand-mark" aria-label="Tensor Works home">
+          <span class="brand-icon" aria-hidden="true"></span>
+          <span class="brand-text">Tensor Works</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#reels">Reels</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero section">
+        <div class="section-copy">
+          <p class="eyebrow">Video Editing Portfolio</p>
+          <h1>Cinematic edits for brands, creators, and campaigns.</h1>
+          <p class="copy">
+            High-retention reels, polished launch cuts, and motion-led storytelling
+            shaped for social, web, and paid performance.
+          </p>
+        </div>
+
+        <article class="video-card video-card-featured" id="work">
+          <div class="video-surface video-landscape">
+            <video
+              class="featured-video"
+              src="./tensor-works-featured-reel.mp4"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+            ></video>
+          </div>
+        </article>
+      </section>
+
+      <section class="section section-intro">
+        <div class="section-copy narrow">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Scroll into short-form edits built to stop the thumb.</h2>
+          <p class="copy">
+            Hooks in the first second, pacing that holds, and clean finishing
+            across subtitles, motion graphics, sound design, and color.
+          </p>
+        </div>
+      </section>
+
+      <section class="section reels-section" id="reels">
+        <div class="reel-grid">
+          <article class="video-card video-card-reel">
+            <div class="video-surface video-reel">
+              <div class="video-overlay">
+                <span class="video-tag">Reel 01</span>
+                <h3>Creator Promo</h3>
+                <p>9:16 social cut with captions, punch-ins, and rhythm edits.</p>
+              </div>
+              <div class="play-button" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="video-card video-card-reel">
+            <div class="video-surface video-reel">
+              <div class="video-overlay">
+                <span class="video-tag">Reel 02</span>
+                <h3>Product Teaser</h3>
+                <p>Fast commercial pacing with motion type and texture layering.</p>
+              </div>
+              <div class="play-button" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="video-card video-card-reel">
+            <div class="video-surface video-reel">
+              <div class="video-overlay">
+                <span class="video-tag">Reel 03</span>
+                <h3>Event Recap</h3>
+                <p>Dynamic recap edit tuned for retention and replay value.</p>
+              </div>
+              <div class="play-button" aria-hidden="true"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section closing-section">
+        <div class="section-copy narrow">
+          <p class="eyebrow">Booking</p>
+          <h2>Editing that looks premium and performs where it matters.</h2>
+          <p class="copy">
+            Brand films, creator content, product cuts, event recaps, and short-form
+            edits delivered with clean pacing and polished finishing.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="eyebrow">Tensor Works</p>
+          <h2>Let’s build your next edit.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:hello@tensorworks.studio">hello@tensorworks.studio</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+910000000000">+91 00000 00000</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <a href="https://instagram.com/tensorworks">@tensorworks</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <p>Mumbai, India</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
